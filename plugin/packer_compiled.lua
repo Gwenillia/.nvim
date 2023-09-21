@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["ChatGPT.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fchatgpt\frequire\0" },
+    loaded = true,
+    path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
+    url = "https://github.com/jackMort/ChatGPT.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -97,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -123,10 +134,20 @@ _G.packer_plugins = {
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/NvChad/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -181,6 +202,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: ChatGPT.nvim
+time([[Config for ChatGPT.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fchatgpt\frequire\0", "config", "ChatGPT.nvim")
+time([[Config for ChatGPT.nvim]], false)
 -- Config for: caret.nvim
 time([[Config for caret.nvim]], true)
 try_loadstring("\27LJ\2\n¨\1\0\0\4\0\f\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\0016\0\6\0009\0\a\0'\1\t\0=\1\b\0006\0\6\0009\0\n\0'\2\v\0B\0\2\1K\0\1\0\22colorscheme caret\bcmd\tdark\15background\bopt\bvim\foptions\1\0\0\1\0\1\16transparent\2\nsetup\ncaret\frequire\0", "config", "caret.nvim")

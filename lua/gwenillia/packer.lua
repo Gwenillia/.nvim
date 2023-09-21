@@ -47,14 +47,15 @@ return require('packer').startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
+  -- TODO: Test
   use({
     "utilyre/barbecue.nvim",
     tag = "*",
     requires = {
       "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons",       -- optional dependency
+      "nvim-tree/nvim-web-devicons", -- optional dependency
     },
-    after = "nvim-web-devicons",           -- keep this if you're using NvChad
+    after = "nvim-web-devicons",     -- keep this if you're using NvChad
     config = function()
       require("barbecue").setup()
     end,
@@ -67,4 +68,17 @@ return require('packer').startup(function(use)
     },
   }
   use "lewis6991/gitsigns.nvim"
+  use 'NvChad/nvim-colorizer.lua'
+  use "github/copilot.vim"
+  use({
+    "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup()
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+  })
 end)

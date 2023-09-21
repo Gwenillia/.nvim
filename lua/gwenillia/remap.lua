@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>fv", vim.cmd.Ex) -- open netrw
 
 -- When Visualizing line, use J or K to move the block up or down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -29,6 +28,4 @@ vim.keymap.set("n", "<leader>f", function()
     vim.lsp.buf.format()
 end)
 
--- nvimtree
-vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
-
+vim.keymap.set("n", "<leader>x", vim.cmd.bdelete)
