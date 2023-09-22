@@ -74,4 +74,9 @@ return require('packer').startup(function(use)
       "nvim-telescope/telescope.nvim"
     }
   })
+  use {
+    "akinsho/toggleterm.nvim", tag = '*', config = function()
+     require("toggleterm").setup()
+   end
+ }
 end)
