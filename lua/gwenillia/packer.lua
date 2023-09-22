@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
     priority = 1000,
     opts = {},
   }
+  use "caca" -- ahah
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
