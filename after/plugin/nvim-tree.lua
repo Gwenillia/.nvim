@@ -7,10 +7,6 @@ vim.opt.termguicolors = true
 
 vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
--- empty setup using defaults
-require("nvim-tree").setup()
-
--- OR setup with some options
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
