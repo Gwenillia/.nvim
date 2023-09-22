@@ -11,18 +11,12 @@ return require('packer').startup(function(use)
     -- or                            , branch = '0.1.x',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use({
-    'projekt0n/caret.nvim',
-    config = function()
-      require('caret').setup({
-        options = {
-          transparent = true,
-        }
-      })
-      vim.opt.background = 'dark'
-      vim.cmd('colorscheme caret')
-    end
-  })
+  use {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  }
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
@@ -47,7 +41,6 @@ return require('packer').startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
-  -- TODO: Test
   use({
     "utilyre/barbecue.nvim",
     tag = "*",
