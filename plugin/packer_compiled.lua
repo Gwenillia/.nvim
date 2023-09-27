@@ -93,12 +93,6 @@ _G.packer_plugins = {
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/opt/barbecue.nvim",
     url = "https://github.com/utilyre/barbecue.nvim"
   },
-  ["caret.nvim"] = {
-    config = { "\27LJ\2\n¨\1\0\0\4\0\f\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\0016\0\6\0009\0\a\0'\1\t\0=\1\b\0006\0\6\0009\0\n\0'\2\v\0B\0\2\1K\0\1\0\22colorscheme caret\bcmd\tdark\15background\bopt\bvim\foptions\1\0\0\1\0\1\16transparent\2\nsetup\ncaret\frequire\0" },
-    loaded = true,
-    path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/caret.nvim",
-    url = "https://github.com/projekt0n/caret.nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -189,6 +183,17 @@ _G.packer_plugins = {
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
+    loaded = true,
+    path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/gwentripet-costet/.local/share/nvim/site/pack/packer/start/undotree",
@@ -206,10 +211,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for ChatGPT.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fchatgpt\frequire\0", "config", "ChatGPT.nvim")
 time([[Config for ChatGPT.nvim]], false)
--- Config for: caret.nvim
-time([[Config for caret.nvim]], true)
-try_loadstring("\27LJ\2\n¨\1\0\0\4\0\f\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\0016\0\6\0009\0\a\0'\1\t\0=\1\b\0006\0\6\0009\0\n\0'\2\v\0B\0\2\1K\0\1\0\22colorscheme caret\bcmd\tdark\15background\bopt\bvim\foptions\1\0\0\1\0\1\16transparent\2\nsetup\ncaret\frequire\0", "config", "caret.nvim")
-time([[Config for caret.nvim]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-web-devicons ]]

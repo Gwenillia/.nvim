@@ -10,7 +10,7 @@ vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, s
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
-    width = 30,
+    adaptive_size = true,
   },
   renderer = {
     group_empty = true,
