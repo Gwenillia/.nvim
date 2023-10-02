@@ -74,10 +74,12 @@ return require('packer').startup(function(use)
       "nvim-telescope/telescope.nvim"
     }
   })
-  use ({
-    "akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-  end
+  use({
+    "akinsho/toggleterm.nvim",
+    tag = '*',
+    config = function()
+      require("toggleterm").setup()
+    end
   })
   use {
     "nvim-neorg/neorg",
@@ -86,5 +88,9 @@ return require('packer').startup(function(use)
     end,
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim",
+  }
+  use {
+    'stevearc/oil.nvim',
+    config = function() require('oil').setup() end
   }
 end)
