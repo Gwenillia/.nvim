@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- When Visualizing line, use J or K to move the block up or down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -29,3 +30,7 @@ vim.keymap.set("n", "<leader>f", function()
 end)
 
 vim.keymap.set("n", "<leader>x", vim.cmd.bdelete)
+
+-- move between buffers
+vim.keymap.set("n", "<TAB>", ":bnext<CR>")
+vim.keymap.set("n", "<S-TAB>", ":bprevious<CR>")
