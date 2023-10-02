@@ -29,3 +29,5 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
+
+vim.opt.conceallevel = 3
