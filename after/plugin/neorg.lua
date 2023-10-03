@@ -4,6 +4,7 @@ require('neorg').setup {
     ["core.concealer"] = {
       config = {
         icon_preset = "diamond",
+        folds = false,
       },
     },       -- Adds pretty icons to your documents
     ["core.dirman"] = {            -- Manages Neorg workspaces
