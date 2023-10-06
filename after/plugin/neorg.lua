@@ -20,5 +20,11 @@ require('neorg').setup {
         default_keybinds = true,    -- Generate the default keybinds
       }
     },
+    ["core.journal"] = {
+      config = {
+        journal_folder = "dailys",
+      }
+    },
+    ["core.summary"] = {},
   },
 }
