@@ -3,8 +3,12 @@ require('neorg').setup {
     ["core.defaults"] = {},        -- Loads default behaviour
     ["core.concealer"] = {
       config = {
-        icon_preset = "diamond",
         folds = false,
+        icons = {
+          code_block = {
+            conceal = true,
+          },
+        },
       },
     },       -- Adds pretty icons to your documents
     ["core.dirman"] = {            -- Manages Neorg workspaces
