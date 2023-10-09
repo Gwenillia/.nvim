@@ -93,4 +93,10 @@ return require('packer').startup(function(use)
     'stevearc/oil.nvim',
     config = function() require('oil').setup() end
   }
+  use({
+	"Pocco81/true-zen.nvim",
+	config = function()
+		 require("true-zen").setup {}
+	end,
+})
 end)
