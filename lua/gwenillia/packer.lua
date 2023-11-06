@@ -94,9 +94,15 @@ return require('packer').startup(function(use)
     config = function() require('oil').setup() end
   }
   use({
-	"Pocco81/true-zen.nvim",
-	config = function()
-		 require("true-zen").setup {}
-	end,
-})
+    "Pocco81/true-zen.nvim",
+    config = function()
+      require("true-zen").setup {}
+    end,
+  })
+  use({
+    "stevearc/aerial.nvim",
+    config = function()
+      require('aerial').setup()
+    end,
+  })
 end)
