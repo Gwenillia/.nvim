@@ -105,4 +105,5 @@ return require('packer').startup(function(use)
       require('aerial').setup()
     end,
   })
+  use { 'nagy135/typebreak.nvim', requires = 'nvim-lua/plenary.nvim' }
 end)
