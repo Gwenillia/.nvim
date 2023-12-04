@@ -34,3 +34,8 @@ vim.keymap.set("n", "<leader>x", vim.cmd.bdelete)
 -- move between buffers
 vim.keymap.set("n", "<TAB>", ":bnext<CR>")
 vim.keymap.set("n", "<S-TAB>", ":bprevious<CR>")
+
+-- mergetool
+vim.keymap.set("n", "<leader>1", ":diffg LO<CR>")
+vim.keymap.set("n", "<leader>2", ":diffg BA<CR>")
+vim.keymap.set("n", "<leader>3", ":diffg RE<CR>")
