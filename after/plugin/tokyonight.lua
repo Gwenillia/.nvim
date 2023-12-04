@@ -5,18 +5,18 @@ require("tokyonight").setup({
     sidebars = "transparent",
     floats = "transparent",
   },
-  on_highlights = function(highlight)
-    highlight.LineNr = { ctermfg=216, fg='#FFA07A' }
-    highlight.PmenuSel = { ctermbg=166, ctermfg=230, bg='#FF7F50', fg='#fff8DC' }
-    highlight.GitSignsAdd = { ctermfg=46, fg='#9F8B89' }
-    highlight.GitSignsChange = { ctermfg=208, fg='#FFD700' }
-    highlight.GitSignsDelete = { ctermfg=196, fg='#FF6347' }
-    highlight.GitSignsAddNr = { ctermfg=46, fg='#9F8B89' }
-    highlight.GitSignsChangeNr = { ctermfg=208, fg='#FFD700' }
-    highlight.GitSignsDeleteNr = { ctermfg=196, fg='#FF6347' }
+  on_highlights = function(highlight, colors)
+    highlight.LineNr = { fg=colors.orange }
+    highlight.PmenuSel = { bg=colors.orange, fg=colors.fg_gutter }
+    highlight.GitSignsAdd = { fg=colors.green1 }
+    highlight.GitSignsChange = { fg=colors.yellow }
+    highlight.GitSignsDelete = { fg=colors.red1 }
+    highlight.GitSignsAddNr = { fg=colors.green1 }
+    highlight.GitSignsChangeNr = { fg=colors.yellow }
+    highlight.GitSignsDeleteNr = { fg=colors.red1 }
   end,
 })
-
 require("tokyonight").colorscheme()
 
 vim.cmd[[colorscheme tokyonight]]
+
