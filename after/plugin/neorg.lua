@@ -30,5 +30,6 @@ require('neorg').setup {
       }
     },
     ["core.summary"] = {},
+    ["core.export"] = {},
   },
 }
