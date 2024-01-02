@@ -30,4 +30,6 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
+vim.g.godot_executable = "/Applications/Godot.app"
+
 vim.opt.conceallevel = 3

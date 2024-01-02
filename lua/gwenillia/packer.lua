@@ -107,4 +107,5 @@ return require('packer').startup(function(use)
   })
   use { 'nagy135/typebreak.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'RaafatTurki/corn.nvim'
+  use 'habamax/vim-godot'
 end)
