@@ -6,8 +6,8 @@ require("tokyonight").setup({
     floats = "transparent",
   },
   on_highlights = function(highlight, colors)
-    highlight.LineNr = { fg=colors.orange }
-    highlight.PmenuSel = { bg=colors.orange, fg=colors.fg_gutter }
+    highlight.LineNr = { fg=colors.cyan }
+    highlight.PmenuSel = { bg=colors.cyan, fg=colors.fg_gutter }
     highlight.GitSignsAdd = { fg=colors.green1 }
     highlight.GitSignsChange = { fg=colors.yellow }
     highlight.GitSignsDelete = { fg=colors.red1 }
