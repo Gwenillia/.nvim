@@ -31,5 +31,6 @@ require('neorg').setup {
     },
     ["core.summary"] = {},
     ["core.export"] = {},
+    ["core.ui.calendar"] = {},
   },
 }
