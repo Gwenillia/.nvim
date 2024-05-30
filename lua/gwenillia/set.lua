@@ -33,3 +33,6 @@ vim.g.mapleader = " "
 vim.g.godot_executable = "/Applications/Godot.app"
 
 vim.opt.conceallevel = 3
+
+vim.opt.fileformat = "unix"
+vim.opt.fileformats = { "unix", "dos" }
