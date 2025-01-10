@@ -13,6 +13,7 @@ vim.keymap.set("n", "<C-j>", "<C-d>zz")
 vim.keymap.set("n", "<C-k>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "<C-d>", "<nop>")
 
 -- paste and delete to void register
 vim.keymap.set("x", "<leader>p", "\"_dP")
@@ -26,7 +27,7 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 -- format
 vim.keymap.set("n", "<leader>f", function()
-    vim.lsp.buf.format()
+  vim.lsp.buf.format()
 end)
 
 vim.keymap.set("n", "<leader>x", vim.cmd.bdelete)
