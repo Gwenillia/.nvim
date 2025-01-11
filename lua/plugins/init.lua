@@ -4,12 +4,13 @@ return {
     -- or                            , branch = '0.1.x',
     dependencies = { { 'nvim-lua/plenary.nvim' } }
   },
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  --- NOTE undo comments to use tokyonight
+  -- {
+    -- "folke/tokyonight.nvim",
+    -- lazy = false,
+    -- priority = 1000,
+    -- opts = {},
+  -- },
   'nvim-treesitter/nvim-treesitter',
   'mbbill/undotree',
   'tpope/vim-fugitive',
