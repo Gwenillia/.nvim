@@ -1,3 +1,4 @@
+vim = vim
 local api = vim.api
 
 api.nvim_set_keymap("n", "<leader>zn", ":TZNarrow<CR>", {})
