@@ -4,7 +4,7 @@ return {
     -- or                            , branch = '0.1.x',
     dependencies = { { 'nvim-lua/plenary.nvim' } }
   },
-  --- NOTE undo comments to use tokyonight
+  --- TODO undo comments to use tokyonight
   -- {
     -- "folke/tokyonight.nvim",
     -- lazy = false,
