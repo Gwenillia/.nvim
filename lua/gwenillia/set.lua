@@ -32,6 +32,8 @@ vim.g.mapleader = " "
 
 vim.g.godot_executable = "/Applications/Godot.app"
 
+vim.g.copilot_node_command = "~/.local/share/nvm/v22.11.0/bin/node"
+
 vim.opt.conceallevel = 3
 
 vim.opt.fileformat = "unix"
