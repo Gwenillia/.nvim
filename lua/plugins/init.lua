@@ -69,13 +69,6 @@ return {
     }
   },
   {
-    "akinsho/toggleterm.nvim",
-    version = '*',
-    config = function()
-      require("toggleterm").setup()
-    end
-  },
-  {
     'stevearc/oil.nvim',
     config = function() require('oil').setup() end
   },
