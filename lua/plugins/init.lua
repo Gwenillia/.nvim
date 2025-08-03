@@ -1,57 +1,46 @@
 return {
   {
     'nvim-telescope/telescope.nvim', version = '0.1.3',
-    -- or                            , branch = '0.1.x',
     dependencies = { { 'nvim-lua/plenary.nvim' } }
   },
-  --- TODO undo comments to use tokyonight
-  -- {
-    -- "folke/tokyonight.nvim",
-    -- lazy = false,
-    -- priority = 1000,
-    -- opts = {},
-  -- },
+  
   'nvim-treesitter/nvim-treesitter',
   'mbbill/undotree',
   'tpope/vim-fugitive',
+  
+  -- LSP and completion (simplified)
   {
-    'VonHeikemen/lsp-zero.nvim',
-    branch = 'v3.x',
+    'williamboman/mason.nvim',
+    config = true,
+  },
+  'neovim/nvim-lspconfig',
+  
+  -- Completion
+  {
+    'hrsh7th/nvim-cmp',
     dependencies = {
-      --- Uncomment these if you want to manage LSP servers from neovim
-      -- {'williamboman/mason.nvim'},
-      -- {'williamboman/mason-lspconfig.nvim'},
-
-      -- LSP Support
-      { 'neovim/nvim-lspconfig' },
-      -- Autocompletion
-      { 'hrsh7th/cmp-nvim-lsp' },
-      { 'hrsh7th/nvim-cmp' },
-      { 'L3MON4D3/LuaSnip' },
-    }
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+    },
   },
-  {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-  },
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-buffer',
+  
   {
     "utilyre/barbecue.nvim",
     name = "barbecue",
     version = "*",
     dependencies = {
       "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons", -- optional dependency
+      "nvim-tree/nvim-web-devicons",
     },
-    opts = {
-      -- configurations go here
-    },
+    opts = {},
   },
   "lukas-reineke/indent-blankline.nvim",
   {
     'nvim-tree/nvim-tree.lua',
     dependencies = {
-      'nvim-tree/nvim-web-devicons', -- optional
+      'nvim-tree/nvim-web-devicons',
     },
   },
   "lewis6991/gitsigns.nvim",
